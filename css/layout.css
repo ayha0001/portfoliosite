@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .grid_2-1 {
     display: grid;
     gap: 20px;
@@ -11,20 +11,24 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .grid_2-1 {
     display: grid;
     gap: 30px;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr; /* To kolonner */
+    grid-template-rows: auto auto; /* To rækker */
+  }
+
+  .textbox {
+    grid-column: 1; /* Placer textbox i første kolonne */
   }
 
   .imgbox {
-    grid-column: 2;
-    grid-row: 1 / span 2;
+    grid-column: 2; /* Placer imgbox i anden kolonne */
   }
 
   .button {
-    grid-row: 2;
+    grid-column: 1; /* Knappen skal være i den første kolonne (under textbox) */
+    grid-row: 2; /* Placer knappen i den anden række */
   }
 }
