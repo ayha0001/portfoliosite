@@ -38,7 +38,7 @@ h2 {
 p {
   font-family: roboto;
   color: var(--tertiary);
-  line-height: 30px;
+  line-height: 35px;
   text-wrap: pretty;
 }
 
@@ -49,6 +49,7 @@ p {
 
   h2 {
     font-size: 1.8rem;
+    padding: 12px 0;
   }
 
   p {
@@ -56,18 +57,33 @@ p {
   }
 }
 
+/*generelle indstillinger*/
+body {
+  background-color: var(--secondary);
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+@media (max-width: 800px) {
+  main {
+    margin: 30px;
+  }
+}
+
 /*knap indstillinger*/
 .button {
   background: var(--primary);
-  padding: 10px 15px;
-  margin: 10px 0px 10px 0px;
+  padding: 13px 25px;
+  margin: 80px 0px 10px 0px;
   max-width: fit-content;
+  place-self: center;
 }
 
-.button a {
+a.button {
   font-family: var(--font2);
   color: white;
   text-decoration: none;
+  font-size: 1.3rem;
 }
 
 .button:hover {
@@ -77,28 +93,16 @@ p {
 
 hr {
   border: 2px solid var(--primary);
+  margin: 50px 0;
 }
 
-/*generelle indstillinger*/
-body {
-  background-color: var(--secondary);
-}
-
-main {
-  max-width: 1000px;
-}
-
-@media (max-width: 800px) {
-  main {
-    margin: 40px;
-  }
-}
+/*billede med rød border*/
 
 .imgbox {
   border: 5px solid var(--primary);
-  margin: 10px 30px 60px;
+  margin-left: 50px;
 }
 
 .image1 {
-  transform: translate(-8%, 8%);
+  transform: translate(-50px, 50px);
 }
