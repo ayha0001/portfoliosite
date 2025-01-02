@@ -1,0 +1,12 @@
+@media (max-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .button {
+    display: grid;
+    grid-row: 3;
+  }
+}
