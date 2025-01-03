@@ -174,3 +174,51 @@ hr {
     place-self: end left;
   }
 }
+
+/*om mig og cv*/
+.grid_1-2 img {
+  margin: 30px 0 10px;
+}
+
+.grid_1-2 p {
+  line-height: 2rem;
+}
+
+.cvtitel {
+  color: white;
+  background-color: var(--primary);
+  max-width: fit-content;
+  padding: 5px 10px;
+
+  @media (max-width: 900px) {
+    font-size: 1.2rem;
+    margin: 45px 0 12px;
+  }
+}
+
+.pbold {
+  font-weight: 900;
+}
+
+.cv li {
+  font-family: roboto;
+  color: var(--tertiary);
+  line-height: 1.9rem;
+  @media (max-width: 900px) {
+    font-size: 1rem;
+  }
+}
+
+.cv ul {
+  margin: 15px 0 40px;
+  list-style-position: inside;
+}
+
+.cv small {
+  font-family: roboto;
+  font-weight: 300;
+
+  @media (max-width: 900px) {
+    font-size: 1rem;
+  }
+}

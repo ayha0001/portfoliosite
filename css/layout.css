@@ -9,6 +9,11 @@
     display: grid;
     gap: 50px;
   }
+
+  .grid_1-2 {
+    display: grid;
+    gap: 25px;
+  }
 }
 
 @media (min-width: 900px) {
