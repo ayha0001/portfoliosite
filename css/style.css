@@ -84,64 +84,14 @@ main {
   }
 }
 
-/*knap indstillinger*/
-.button {
-  background: var(--primary);
-  padding: 13px 25px;
-  max-width: fit-content;
-  place-self: center;
-}
-
-a.button {
-  font-family: var(--font2);
-  color: white;
-  text-decoration: none;
-  font-size: 1.3rem;
-}
-
-.button:hover {
-  background: var(--primary);
-  opacity: 70%;
-}
-
-hr {
-  border: 2px solid var(--primary);
-  margin: 50px 0;
-}
-
-/*billede med rød border*/
-
-.imgbox {
-  border: 5px solid var(--primary);
-
-  @media (max-width: 900px) {
-    margin-left: 50px;
-    margin-bottom: 80px;
-  }
-
-  @media (min-width: 900px) {
-    margin-left: 70px;
-  }
-}
-
-.image1 {
-  transform: translate(-50px, 50px);
-}
-
-@media (min-width: 900px) {
-  .button {
-    display: inline-block;
-    place-self: end left;
-  }
-}
-
+/*header og footer*/
 header {
   padding: 30px 50px;
 }
 
 .logo img {
-  height: auto;
   width: 130px;
+  height: auto;
 }
 
 .container {
@@ -168,4 +118,59 @@ header {
 .container a:hover {
   color: var(--primary);
   opacity: 75%;
+}
+
+/* .menubar {
+  background-color: #f61511;
+} */
+
+/*knap indstillinger*/
+.button {
+  background: var(--primary);
+  padding: 13px 25px;
+  max-width: fit-content;
+  place-self: center;
+}
+
+a.button {
+  font-family: var(--font2);
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.button:hover {
+  background: var(--primary);
+  opacity: 70%;
+}
+
+hr {
+  border: 2px solid var(--primary);
+  margin: 70px 0;
+}
+
+/*billede med rød border*/
+
+.imgbox {
+  border: 5px solid var(--primary);
+
+  @media (max-width: 900px) {
+    margin-left: 50px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: 900px) {
+    margin-left: 70px;
+  }
+}
+
+.image1 {
+  transform: translate(-50px, 50px);
+}
+
+@media (min-width: 900px) {
+  .button {
+    display: inline-block;
+    place-self: end left;
+  }
 }
