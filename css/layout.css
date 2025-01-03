@@ -7,7 +7,7 @@
 
   .grid_1-1 {
     display: grid;
-    gap: 20px;
+    gap: 50px;
   }
 }
 
@@ -30,5 +30,11 @@
   .button {
     grid-column: 1; /* Knappen skal være i den første kolonne (under textbox) */
     grid-row: 2; /* Placer knappen i den anden række */
+  }
+
+  .grid_1-1 {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
   }
 }

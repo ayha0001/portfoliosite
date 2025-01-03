@@ -16,7 +16,6 @@ img {
   --primary: #f61511;
   --secondary: #ece6d4;
   --tertiary: #3f3f43;
-  --primaryopacity: #f61511, 0.8;
   --font1: pt sans caption;
   --font2: roboto;
 }
@@ -134,4 +133,39 @@ hr {
     display: inline-block;
     place-self: end left;
   }
+}
+
+header {
+  padding: 30px 50px;
+}
+
+.logo img {
+  height: auto;
+  width: 130px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.container a {
+  font-family: roboto;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.container a:hover {
+  color: var(--primary);
+  opacity: 75%;
 }
