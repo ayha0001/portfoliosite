@@ -22,20 +22,20 @@ img {
 
 /*font indstillinger*/
 h1 {
-  font-family: var(--font1);
+  font-family: var(--font1), sans-serif;
   color: var(--primary);
   letter-spacing: 5px;
   font-weight: 900;
 }
 
 h2 {
-  font-family: var(--font1);
+  font-family: var(--font1), sans-serif;
   color: var(--tertiary);
   font-weight: 100;
 }
 
 p {
-  font-family: roboto;
+  font-family: var(--font2), sans-serif;
   color: var(--tertiary);
   line-height: 35px;
   text-wrap: pretty;
@@ -107,7 +107,7 @@ header {
 }
 
 .container a {
-  font-family: roboto;
+  font-family: var(--font2), sans-serif;
   color: var(--primary);
   text-decoration: none;
   font-size: 1.3rem;
@@ -176,8 +176,8 @@ hr {
 }
 
 /*om mig og cv*/
-.grid_1-2 img {
-  margin: 30px 0 10px;
+.grid_1-2 {
+  margin: 30px 0 0;
 }
 
 .grid_1-2 p {
@@ -200,10 +200,17 @@ hr {
   font-weight: 900;
 }
 
+.grid_1-2 .pbold {
+  @media (max-width: 900px) {
+    margin-top: 25px;
+  }
+}
+
 .cv li {
-  font-family: roboto;
+  font-family: var(--font2), sans-serif;
   color: var(--tertiary);
   line-height: 1.9rem;
+
   @media (max-width: 900px) {
     font-size: 1rem;
   }
@@ -215,10 +222,14 @@ hr {
 }
 
 .cv small {
-  font-family: roboto;
+  font-family: var(--font2), sans-serif;
   font-weight: 300;
 
   @media (max-width: 900px) {
     font-size: 1rem;
   }
+}
+
+.sprog .pbold {
+  margin-top: 12px;
 }
