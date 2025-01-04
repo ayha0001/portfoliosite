@@ -34,6 +34,11 @@ h2 {
   font-weight: 100;
 }
 
+h3 {
+  font-family: var(--font1), sans-serif;
+  color: var(--primary);
+}
+
 p {
   font-family: var(--font2), sans-serif;
   color: var(--tertiary);
@@ -120,6 +125,13 @@ header {
   opacity: 75%;
 }
 
+.line {
+  flex-grow: 1;
+  height: 3px;
+  background-color: red;
+  margin: 0 15px;
+}
+
 /* .menubar {
   background-color: #f61511;
 } */
@@ -194,6 +206,11 @@ hr {
     font-size: 1.2rem;
     margin: 45px 0 12px;
   }
+
+  @media (min-width: 900px) {
+    font-size: 1.4rem;
+    margin: 45px 0 10px;
+  }
 }
 
 .pbold {
@@ -214,11 +231,22 @@ hr {
   @media (max-width: 900px) {
     font-size: 1rem;
   }
+
+  @media (min-width: 900px) {
+    font-size: 1.1rem;
+  }
 }
 
 .cv ul {
-  margin: 15px 0 40px;
   list-style-position: inside;
+
+  @media (max-width: 900px) {
+    margin: 15px 0 40px;
+  }
+
+  @media (min-width: 900px) {
+    margin: 18px 0 20px;
+  }
 }
 
 .cv small {
@@ -228,8 +256,25 @@ hr {
   @media (max-width: 900px) {
     font-size: 1rem;
   }
+
+  @media (min-width: 900px) {
+    font-size: 1.05rem;
+  }
 }
 
 .sprog .pbold {
   margin-top: 12px;
+}
+
+.grid_1-2 .imgbox {
+  margin: 0;
+}
+
+.themes {
+  margin: 10px 0;
+}
+.themebox {
+  border: 2px solid var(--primary);
+  padding: 20px;
+  margin: 20px 0;
 }
