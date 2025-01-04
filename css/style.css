@@ -46,7 +46,7 @@ p {
   text-wrap: pretty;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -80,22 +80,41 @@ p {
 body {
   background-color: var(--secondary);
 }
-main {
+
+/* main {
   margin: 38px;
 
   @media (min-width: 960px) {
     margin: 90px auto;
     max-width: 900px;
   }
+} */
+
+main {
+  margin: 100px 38px;
+
+  @media (min-width: 900px) {
+    margin: 100px 50px 70px;
+  }
+  @media (min-width: 1070px) {
+    margin: 100px auto 50px auto;
+    max-width: 1000px;
+  }
 }
 
 /*header og footer*/
+header {
+  position: sticky;
+  padding: 30px;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--secondary);
+}
+
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  margin: 30px;
 }
 
 .logo {
@@ -212,13 +231,11 @@ hr {
 }
 
 /*billede med rød border*/
-
 .imgbox {
   border: 5px solid var(--primary);
 
   @media (max-width: 900px) {
-    margin-left: 50px;
-    margin-bottom: 80px;
+    margin: 30px 0 90px 50px;
   }
 
   @media (min-width: 900px) {
@@ -238,7 +255,57 @@ hr {
 }
 
 /*om mig og cv*/
-.grid_1-2 {
+.grid_1-1 .imgbox {
+  margin: 0;
+
+  @media (max-width: 900px) {
+    margin-right: 50px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: 900px) {
+    margin-right: 90px;
+    margin-bottom: 25px;
+  }
+}
+
+.image2 {
+  transform: translate(50px, 50px);
+}
+
+.pbold {
+  font-weight: 700;
+}
+
+.contact {
+  margin: 20px 0;
+}
+
+.contact ul {
+  list-style: none;
+  font-size: 1.1rem;
+  color: var(--tertiary);
+  font-family: var(--font2);
+  line-height: 35px;
+  margin: 0 0 20px;
+}
+
+.language {
+  margin: 28px 0;
+
+  @media (max-width: 900px) {
+    border-top: 3px solid var(--primary);
+    border-bottom: 3px solid var(--primary);
+    padding: 15px 0;
+  }
+
+  @media (min-width: 900px) {
+    border: 3px solid var(--primary);
+    padding: 15px;
+  }
+}
+
+/* .grid_1-2 {
   margin: 30px 0 0;
 }
 
@@ -327,4 +394,4 @@ hr {
   border: 2px solid var(--primary);
   padding: 20px;
   margin: 20px 0;
-}
+} */
