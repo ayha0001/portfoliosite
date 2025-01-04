@@ -81,7 +81,7 @@ body {
   background-color: var(--secondary);
 }
 main {
-  margin: 30px;
+  margin: 38px;
 
   @media (min-width: 960px) {
     margin: 90px auto;
@@ -90,51 +90,101 @@ main {
 }
 
 /*header og footer*/
-header {
-  padding: 30px 50px;
-}
-
-.logo img {
-  width: 130px;
-  height: auto;
-}
-
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin: 30px;
 }
 
-.container ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
+.logo {
+  width: 150px;
+  height: auto;
 }
 
-.container a {
-  font-family: var(--font2), sans-serif;
-  color: var(--primary);
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.container a:hover {
-  color: var(--primary);
-  opacity: 75%;
-}
-
-.line {
+.bigline {
   flex-grow: 1;
   height: 3px;
   background-color: red;
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
-/* .menubar {
-  background-color: #f61511;
-} */
+.menubar {
+  display: flex;
+  align-items: center;
+}
+
+.menulinks {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menubar li a {
+  font-family: var(--font2), sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--primary);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.menubar li a:hover {
+  opacity: 75%;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  transition: transform 0.3s ease;
+}
+
+.burger .line {
+  width: 30px;
+  height: 4px;
+  background-color: var(--primary);
+  border-radius: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px); /* Første linje roteres og flyttes */
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0; /* Mellemste linje forsvinder */
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px); /* Tredje linje roteres og flyttes */
+}
+
+@media (max-width: 900px) {
+  .menulinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    left: 30px;
+    width: 90%;
+    background-color: var(--secondary);
+    border: 3px solid var(--primary);
+    padding: 1.3rem;
+    z-index: 100;
+  }
+
+  .burger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .menulinks.active {
+    display: flex;
+  }
+}
 
 /*knap indstillinger*/
 .button {
