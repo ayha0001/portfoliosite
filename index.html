@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Forside</title>
+    <link rel="icon" type="image/x-icon" href="billeder/favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,25 +20,25 @@
       rel="stylesheet"
     />
   </head>
-  <header>
-    <div class="container">
-      <a class="logo" href="index.html"><img src="billeder/logo.svg" alt="" /></a>
-      <div class="bigline"></div>
-      <nav class="menubar">
-        <ul class="menulinks" id="menulinks">
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="om-mig.html">Om mig</a></li>
-          <li><a href="cv.html">CV</a></li>
-        </ul>
-        <div class="burger" id="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
-    </div>
-  </header>
   <body>
+    <header>
+      <div class="container">
+        <a class="logo" href="index.html"><img src="billeder/logo.svg" alt="" /></a>
+        <div class="bigline"></div>
+        <nav class="menubar">
+          <ul class="menulinks" id="menulinks">
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="om-mig.html">Om mig</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+          <div class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
     <main>
       <div class="grid_2-1">
         <div class="textbox">
@@ -54,22 +55,44 @@
         <a class="button" href="portfolio.html">Portfolio</a>
       </div>
       <hr />
-
       <div class="grid_1-1">
-        <div class="linkbox">
-          <h2>Læs mere om mig</h2>
-          <p>Læs mere om mig og hvem jeg er, ved at trykke her.</p>
-          <a class="button" href="om-mig.html">Om mig</a>
+        <div class="card">
+          <h2>Hvem er jeg?</h2>
+          <p>Få et indblik i, hvem jeg er, og se mit CV og mine kvalifikationer her.</p>
+          <a href="om-mig.html" class="button">Om mig</a>
         </div>
-
-        <div class="linkbox">
-          <h2>Se mit CV</h2>
-          <p>Se mit CV her</p>
-          <a class="button" href="kontakt.html">CV</a>
+        <div class="card">
+          <h2>Kontakt mig her</h2>
+          <p>Find mig på Instagram, Facebook, LinkedIn, mail og mobil.</p>
+          <a href="kontakt.html" class="button">Kontakt mig</a>
         </div>
       </div>
       <hr />
     </main>
+    <footer>
+      <div class="footercontainer">
+        <img class="logo" src="billeder/logo.svg" alt="Logo" />
+        <div class="contactinfo">
+          <ul>
+            <li><a href="mailto:saberaylin@gmail.com">saberaylin@gmail.com</a></li>
+            <li><a href="tel:+4571100098">+45 71100098</a></li>
+          </ul>
+          <div class="socials">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/aylinsaber_/"><img src="billeder/instagram.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=100009716586452&locale=da_DK"><img src="billeder/facebook.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/aylin-saber-b45041285/"><img src="billeder/linkedin.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

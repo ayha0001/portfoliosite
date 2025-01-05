@@ -16,6 +16,15 @@
 }
 
 @media (min-width: 900px) {
+  .contactinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .socials {
+    grid-column: 2;
+  }
+
   .grid_2-1 {
     display: grid;
     gap: 30px;
