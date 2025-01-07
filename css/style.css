@@ -60,6 +60,7 @@ p {
 
   h3 {
     margin: 10px 0 5px;
+    font-size: 1.4rem;
   }
 }
 
@@ -70,6 +71,10 @@ p {
   h2 {
     font-size: 2.3rem;
     padding: 15px 0;
+  }
+
+  h3 {
+    font-size: 1.6rem;
   }
   p {
     font-size: 1.1rem;
@@ -498,4 +503,9 @@ small {
 /* tema 3*/
 .grid_style {
   margin-bottom: 40px;
+}
+
+.figma-embed {
+  border: 3px solid var(--primary);
+  padding: 10px;
 }
