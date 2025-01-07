@@ -8,6 +8,11 @@
     display: grid;
     gap: 30px;
   }
+
+  .grid_about {
+    display: grid;
+    gap: 30px;
+  }
 }
 
 .language {
@@ -50,7 +55,13 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .grid_1-1 .imgbox {
+  .grid_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .grid_about .imgbox {
     grid-column: 1;
     grid-row: 1 / span 2;
   }
@@ -65,7 +76,7 @@
 
   .contactbox {
     display: grid;
-    gap: 45px;
+    gap: 150px;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -80,6 +91,35 @@
   }
 
   .image2 {
+    grid-column: 2;
+  }
+
+  .cvcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 80px;
+  }
+
+  .cvjob {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .cvschool {
+    grid-column: 2;
+  }
+
+  .kompetencer {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .grid_tema2 {
+    display: grid;
+    grid-column: 1fr 1fr;
+  }
+
+  .temabutton {
     grid-column: 2;
   }
 }

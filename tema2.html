@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Grundlæggende web</title>
     <link rel="icon" type="image/x-icon" href="billeder/favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
@@ -20,41 +20,37 @@
       rel="stylesheet"
     />
   </head>
-  <header>
-    <div class="container">
-      <a class="logo" href="index.html"><img src="billeder/logo.svg" alt="" /></a>
-      <div class="bigline"></div>
-      <nav class="menubar">
-        <ul class="menulinks" id="menulinks">
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="om-mig.html">Om mig</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-        <div class="burger" id="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
-    </div>
-  </header>
   <body>
+    <header>
+      <div class="container">
+        <a class="logo" href="index.html"><img src="billeder/logo.svg" alt="" /></a>
+        <div class="bigline"></div>
+        <nav class="menubar">
+          <ul class="menulinks" id="menulinks">
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="om-mig.html">Om mig</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+          <div class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
     <main>
-      <h1>Portfolio</h1>
-      <h2>Mine projekter fra første semester</h2>
-      <div class="themebox">
-        <div class="themes left">
-          <a href="tema2.html">Tema 2 - Grundlæggende web</a>
+      <h1>Grundlæggende web</h1>
+      <h2>Tema 2 - Website</h2>
+      <div class="grid_tema2">
+        <div class="temaintro">
+          <p>
+            I mit første forløb fik jeg en introduktion til de vigtigste værktøjer, der danner fundamentet for resten af min uddannelse. Jeg lærte om
+            nøglebegreber inden for digitalt design, indholdsproduktion, responsivt webdesign og digital kommunikation. Samtidig fik jeg hands-on
+            erfaring med at opbygge websider i HTML og CSS samt arbejde med grafisk design og layout i bl.a. Figma.
+          </p>
         </div>
-        <div class="themes right">
-          <a href="tema2.html">Tema 3 - Grundlæggende UX/UI</a>
-        </div>
-        <div class="themes left">
-          <a href="tema2.html">Tema 4 - Grundlæggende animation</a>
-        </div>
-        <div class="themes right">
-          <a href="tema2.html">Tema 5 - Grundlæggende indhold</a>
-        </div>
+        <div class="temabutton"><a class="button" href="https://aylinhashgin.dk/kea/02_web/01_website/website/">Se sitet her</a></div>
       </div>
       <hr />
     </main>
@@ -73,6 +69,5 @@
         <p>Lavet af Aylin Saber Hashgin, 2024</p>
       </div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
