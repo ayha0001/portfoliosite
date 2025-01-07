@@ -502,10 +502,15 @@ small {
 
 /* tema 3*/
 .grid_style {
-  margin-bottom: 40px;
+  margin: 10px 0 40px;
 }
 
 .figma-embed {
   border: 3px solid var(--primary);
   padding: 10px;
+}
+
+/* tema 5 */
+.styletext img {
+  margin-bottom: 20px;
 }

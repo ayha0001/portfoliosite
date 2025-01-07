@@ -46,10 +46,9 @@
         <div class="temaintro">
           <p>
             I første del af dette tema blev jeg introduceret til grundlæggende indholdsproduktion, herunder præproduktion, produktion og
-            postproduktion. Ved hjælp af et smartphone-kamera og en mikrofon til optagelse af ekstern lyd skulle jeg interviewe en person med en
-            passion og optage b-rolls til at supplere interviewet. Efterfølgende skabte jeg et site, der præsenterede deres passion. Efter
-            optagelserne redigerede jeg videoklip i Premiere Pro og brugte Adobe Audition til at finjustere lyden. Derudover arbejdede jeg med
-            Lottiefiles og skabte animeret grafik ved hjælp af After Effects, som jeg integrerede på sitet.
+            postproduktion, samt faglige begreber inden for området. Jeg skulle bruge denne viden til at interviewe, optage og redigere en video om en
+            person med en passion, som jeg skulle præsentere på et site. Derudover skulle jeg for første gang prøve at lave en Lottiefile, som skulle
+            integreres på sitet, og jeg skulle lære mere om Premiere Pro og After Effects til henholdsvis video- og animationsarbejde.
           </p>
         </div>
         <div class="temabutton"><a class="button" href="https://aylinhashgin.dk/kea/05_indhold/passionsite/">Se sitet her</a></div>
@@ -60,20 +59,64 @@
         <div class="image3"><img src="billeder/passionsite.webp" alt="Spilelementer"" /></div>
         <div class="tematext">
           <p>
-            I dette tema skulle vi undersøge, designe og programmere vores eget spil. Det var et mere udfordrende tema end de tidligere, men også
-            utrolig spændende at blive udfordret og til sidst stå med et færdigt produkt, der fungerer. Først skulle vi udarbejde pitches om, hvad
-            vores spil skulle handle om, og hvilket udtryk det skulle have. Jeg valgte at lave et spil, hvor man skal fange ingredienserne til den
-            perfekte Espresso Martini.
+            I dette forløb valgte jeg at interviewe en pige ved navn Emily, som har en stor passion for hækling og strik. Jeg lavede en video, der
+            omhandlede hendes passion, og designede et site til at præsentere den. Sitet blev bygget med udgangspunkt i udleverede wireframes, men
+            valg af farver, typografi og andre visuelle elementer stod jeg selv for.
           </p>
           <h3>Proces</h3>
           <p>
-            Efter at have valgt min idé begyndte jeg at arbejde med konceptet og overvejede spillets visuelle udtryk. Jeg lavede moodboards og fandt
-            inspiration i flat design, som med sin minimalistiske stil og klare farver passede perfekt til spillets æstetik. Jeg udvalgte også farver
-            og fonte til både spillet og det tilhørende website for at skabe en sammenhængende visuel identitet. Derudover udviklede jeg aktivitets-
-            og state machine-diagrammer samt skitser af spillets elementer og baggrunde for at strukturere og visualisere spillets design og
-            funktionalitet.
+            Ved hjælp af et smartphone-kamera og en mikrofon til ekstern lyd optog jeg et interview med Emily, om hendes passion for hækling og strik,
+            samt b-rolls til at supplere interviewet. Derefter skabte jeg et site, der præsenterede passionen. Jeg redigerede videoen i Premiere Pro
+            og finjusterede lyden i Adobe Audition. Derudover arbejdede jeg med Lottiefiles og lavede en baggrundsvideo til hero-sektionen på sitet,
+            hvor animeret tekst kørte over videoen. Layoutet var baseret på udleverede wireframes og diagrammer, som jeg fulgte under arbejdet.
           </p>
         </div>
+      </div>
+      <hr />
+      <h2>Lottiefile</h2>
+      <h3>After Effect</h3>
+      <div class="grid_style">
+        <div class="style">
+          <p>
+            Jeg brugte After Effects til at skabe teksten og animationerne, der skulle køre ovenpå videoen. Da videoen var for tung som en Lottiefile,
+            lavede jeg animationen og den semitransparente baggrund i After Effects og tilføjede videoen direkte i HTML senere. Teksten designede jeg
+            i Illustrator og overførte den til After Effects via Adobes Library. Jeg placerede teksten, tilføjede animationer med transform-egenskaber
+            som scale og position, og tilføjede en blå baggrund med lav opacity, så videoen kunne ses igennem.
+          </p>
+        </div>
+        <div class="styletext">
+          <img src="billeder/aftereffect.webp" alt="After Effect" />
+          <img src="billeder/aftereffectdesk.webp" alt="After Effect transform" />
+        </div>
+      </div>
+      <h3>Asset link for lottiefilen</h3>
+      <div class="grid_style">
+        <div class="style">
+          <img src="billeder/lottiefilelink.webp" alt="Asset link til at putte ind i html" />
+        </div>
+        <div class="styletext">
+          <p>
+            Jeg uploadede min After Effects-animation til Lottiefiles.com og konverterede den til en Lottiefile. Da det var gjort, kunne jeg derefter
+            kopiere filens asset-link fra sitet, som jeg så kunne bruge til at implementere Lottiefilen i min HTML.
+          </p>
+        </div>
+      </div>
+      <h3>Implementering af lottiefile</h3>
+      <div class="grid_style">
+        <div class="styletext">
+          <img src="billeder/lottiefilehtml.webp" alt="Lottiefile i HTML" />
+        </div>
+        <div class="style">
+          <p>
+            Sådan implementerede jeg min Lottiefile i min HTML: Jeg indsatte den inden for body-sektionen (efter min header), men uden for main, i et
+            hero-tag. Først tilføjede jeg mit videoklip i hero-sektionen og satte den til at være muted, afspille automatisk og loope. Derefter
+            placerede jeg min Lottiefile ovenpå videoen.
+          </p>
+        </div>
+      </div>
+      <div class="buttoncontainer">
+        <a href="tema4.html" class="button">Forrige tema</a>
+        <a href="tema5-2.html" class="button">Næste tema</a>
       </div>
       <hr />
     </main>
