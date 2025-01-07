@@ -469,5 +469,6 @@ small {
 }
 
 .temabutton {
+  margin: 25px;
   place-self: center;
 }
