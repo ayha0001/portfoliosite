@@ -23,6 +23,16 @@
     display: grid;
     gap: 30px;
   }
+
+  .grid_style {
+    display: grid;
+    gap: 10px;
+  }
+
+  .image3 {
+    display: grid;
+    gap: 20px;
+  }
 }
 
 .language {
@@ -145,6 +155,8 @@
   }
 
   .image3 {
+    display: grid;
+    gap: 10px;
     grid-column: 3;
   }
 
@@ -165,5 +177,37 @@
 
   .layout3 {
     grid-column: 3;
+  }
+
+  .grid_style {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+  }
+
+  .style {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .styletext {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .grid_figma {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 35px;
+  }
+
+  .figma_text {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .figma-embed {
+    grid-column: 1;
+    grid-row: 1;
   }
 }

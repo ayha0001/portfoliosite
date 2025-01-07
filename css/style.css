@@ -52,10 +52,14 @@ p {
   }
   h2 {
     font-size: 1.8rem;
-    padding: 12px 0;
+    padding: 12px 0 18px;
   }
   p {
     font-size: 1.1rem;
+  }
+
+  h3 {
+    margin: 10px 0 5px;
   }
 }
 
@@ -488,5 +492,10 @@ small {
 .buttoncontainer {
   display: flex;
   justify-content: space-between;
-  margin-top: 80px;
+  margin-top: 90px;
+}
+
+/* tema 3*/
+.grid_style {
+  margin-bottom: 40px;
 }
