@@ -50,12 +50,10 @@ p {
   h1 {
     font-size: 2.5rem;
   }
-
   h2 {
     font-size: 1.8rem;
     padding: 12px 0;
   }
-
   p {
     font-size: 1.1rem;
   }
@@ -65,14 +63,13 @@ p {
   h1 {
     font-size: 3rem;
   }
-
   h2 {
     font-size: 2.3rem;
     padding: 15px 0;
   }
-
   p {
     font-size: 1.1rem;
+    margin-bottom: 8px;
   }
 }
 
@@ -301,7 +298,7 @@ hr {
 .grid_1-1 {
   display: flex;
   gap: 40px;
-  padding: 2rem 0;
+  padding: 10px 0;
 }
 
 .card {
@@ -314,7 +311,7 @@ hr {
 }
 
 .card .button {
-  margin: 15px 0;
+  margin: 5px 0;
   place-self: center;
 }
 
@@ -461,14 +458,35 @@ small {
 
 /* tema 2*/
 .grid_tema2 {
-  margin: 20px 0;
+  margin: 20px 0px;
+  @media (min-width: 900px) {
+    margin: 20px 0px 40px;
+  }
 }
 
 .temaintro {
   max-width: 75ch;
 }
 
+.tematext h3 {
+  margin: 29px 0 0;
+}
+
 .temabutton {
   margin: 25px;
   place-self: center;
+}
+
+.layout {
+  margin-top: 10px;
+}
+
+.grid_1-1 p {
+  margin: 10px 0 20px;
+}
+
+.buttoncontainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
 }
