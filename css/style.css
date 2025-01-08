@@ -21,6 +21,7 @@ img {
 }
 
 /*font indstillinger*/
+/*font indstillinger*/
 h1 {
   font-family: var(--font1), sans-serif;
   color: var(--primary);
@@ -89,11 +90,16 @@ body {
 
 main {
   margin: 80px 40px;
+}
 
-  @media (min-width: 900px) {
+@media (min-width: 900px) {
+  main {
     margin: 80px 50px 70px;
   }
-  @media (min-width: 1070px) {
+}
+
+@media (min-width: 1070px) {
+  main {
     margin: 80px auto 50px auto;
     max-width: 1000px;
   }
@@ -135,6 +141,7 @@ header {
   list-style: none;
   display: flex;
   gap: 25px;
+  transition: all 0.3s ease;
 }
 
 .menubar li a {
@@ -215,8 +222,10 @@ footer {
 footer .logo {
   width: 140px;
   margin-bottom: 5px;
+}
 
-  @media (min-width: 900px) {
+@media (min-width: 900px) {
+  footer .logo {
     width: 150px;
   }
 }
@@ -224,6 +233,8 @@ footer .logo {
 .footercontainer a {
   color: var(--tertiary);
   font-size: 1rem;
+  font-family: var(--font2);
+  letter-spacing: 1px;
 }
 
 .socials {
@@ -236,8 +247,10 @@ footer .logo {
 .socials img {
   width: 30px;
   height: auto;
+}
 
-  @media (min-width: 900px) {
+@media (min-width: 900px) {
+  .socials img {
     width: 40px;
   }
 }
@@ -259,6 +272,7 @@ footer .logo {
   padding: 13px 25px;
   width: 170px;
   place-self: center;
+  text-align: center;
 }
 
 a.button {
@@ -281,12 +295,14 @@ hr {
 /*billede med rød border*/
 .imgbox {
   border: 5px solid var(--primary);
-
-  @media (max-width: 900px) {
+}
+@media (max-width: 900px) {
+  .imgbox {
     margin: 30px 0 90px 50px;
   }
-
-  @media (min-width: 900px) {
+}
+@media (min-width: 900px) {
+  .imgbox {
     margin-left: 70px;
   }
 }
@@ -302,8 +318,7 @@ hr {
   }
 }
 
-/*to links på forsiden*/
-
+/* to links på forsiden */
 .grid_1-1 {
   display: flex;
   gap: 40px;
@@ -327,19 +342,23 @@ hr {
 /*om mig og cv*/
 .grid_about .imgbox {
   margin: 0;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .grid_about .imgbox {
     margin-right: 50px;
     margin-bottom: 70px;
   }
+}
 
-  @media (min-width: 900px) {
+@media (min-width: 900px) {
+  .grid_about .imgbox {
     margin-right: 90px;
   }
 }
 
-.grid_about {
-  @media (min-width: 900px) {
+@media (min-width: 900px) {
+  .grid_about {
     margin-bottom: 100px;
   }
 }
@@ -367,16 +386,17 @@ hr {
 
 .language {
   margin: 27px 0 37px;
-
-  @media (max-width: 900px) {
+}
+@media (max-width: 900px) {
+  .language {
     border-top: 3px solid var(--primary);
     border-bottom: 3px solid var(--primary);
     padding: 35px 0;
   }
 }
 
-.noline {
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .noline {
     display: none;
   }
 }
@@ -384,9 +404,6 @@ hr {
 .cvtitel {
   color: var(--primary);
   font-size: 1.8rem;
-
-  @media (min-width: 900px) {
-  }
 }
 
 .cvbox ul {
@@ -424,8 +441,9 @@ small {
   border: 3px solid var(--primary);
   margin: 18px;
   padding: 18px;
-
-  @media (min-width: 900px) {
+}
+@media (min-width: 900px) {
+  .themes {
     margin: 25px 0 30px;
     padding: 30px;
     width: 600px;
@@ -437,8 +455,9 @@ small {
   font-family: var(--font1);
   color: var(--tertiary);
   font-size: 1.1rem;
-
-  @media (min-width: 900px) {
+}
+@media (min-width: 900px) {
+  .themes a {
     font-size: 1.7rem;
     display: inline-block; /* Sørger for, at transform kun gælder for teksten */
     transition: transform 0.3s ease, color 0.3s ease;
@@ -449,10 +468,6 @@ small {
   text-decoration: none;
   transform: scale(1.1); /* Gør teksten større */
   color: var(--tertiary);
-
-  @media (min-width: 900px) {
-    transform: scale(1.1); /* Gør teksten større */
-  }
 }
 
 .left {
@@ -468,7 +483,9 @@ small {
 /* tema 2*/
 .grid_tema2 {
   margin: 20px 0px;
-  @media (min-width: 900px) {
+}
+@media (min-width: 900px) {
+  .grid_tema2 {
     margin: 20px 0px 40px;
   }
 }
