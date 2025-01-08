@@ -518,7 +518,7 @@ small {
 }
 
 /* tema 3*/
-.grid_style {
+.grid_box {
   margin: 10px 0 40px;
 }
 
@@ -528,6 +528,6 @@ small {
 }
 
 /* tema 5 */
-.styletext img {
+.box2 img {
   margin-bottom: 20px;
 }
